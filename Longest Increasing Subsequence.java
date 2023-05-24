@@ -1,6 +1,7 @@
 class Solution {
     public int lengthOfLIS(int[] nums) {
       int n=nums.length;
+      if(nums.length==0 || nums==null) return 0;
       int[] dp= new int[n];
       dp[0]=1;
       int omax=1;
